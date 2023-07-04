@@ -1,3 +1,5 @@
+import initAnimaNumeros from "./animaNumero.js";
+
 export default function initAnimaisNumeros() {
   const criaAnimal = (animal) => {
     const div = document.createElement("div");
@@ -18,6 +20,7 @@ export default function initAnimaisNumeros() {
 
       section.appendChild(div);
     });
+    initAnimaNumeros();
   };
   buscaNumeros("./animaisapi.json");
 }

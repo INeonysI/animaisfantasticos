@@ -9,7 +9,7 @@ export default function scrollAnimation() {
 
       if (altura < alturaMinima) {
         section.classList.add("visible");
-      } else {
+      } else if (section.classList.contains("visible")) {
         section.classList.remove("visible");
       }
     });
