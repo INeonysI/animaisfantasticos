@@ -318,3 +318,35 @@ body {
 [data-tab="content"] section.visible {
   display: block;
 }
+
+/* accordion */
+
+[data-accordion] dd {
+  display: none;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+[data-accordion] dd.active {
+  display: block;
+}
+
+[data-accordion] dt::after {
+  content: "⬎";
+  margin-left: 10px;
+}
+
+[data-accordion] dt.active::after {
+  content: "⬏";
+  margin-left: 10px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
