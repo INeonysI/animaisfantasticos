@@ -307,3 +307,14 @@ body {
     opacity: 1;
   }
 }
+
+/* tabnav */
+
+[data-tab="content"] section {
+  display: none;
+  animation: leftToRight 0.5s ease-in-out;
+}
+
+[data-tab="content"] section.visible {
+  display: block;
+}
